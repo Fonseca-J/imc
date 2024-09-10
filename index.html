@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicativo para calcular o Índice de Massa Corporal (IMC) e avaliar a saúde corporal.">
+    <title>IMC</title>
+    <link rel="shortcut icon" href="img/bati.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Como está sua saúde corporal?</h1>
+        <form name="frmFreq" onsubmit="return calcular()">
+            <img src="img/logo.png" alt="Logo do Aplicativo" id="status">
+
+            <fieldset id="texto">
+                <legend>Status</legend>
+            </fieldset>
+
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+
+                <label for="inputNome">Nome:</label>
+                <input type="text" id="inputNome" required><br>
+
+                <label for="inputIdade">Idade:</label>
+                <input type="number" id="inputIdade" required><br>
+
+                <label for="inputPeso">Peso (kg):</label>
+                <input type="number" id="inputPeso" step="0.1" required><br>
+
+                <label for="inputAltura">Altura (cm):</label>
+                <input type="number" id="inputAltura" step="0.1"required><br>
+
+                <label for="inputImc">IMC:</label>
+                <input type="text" id="inputImc" readonly><br>
+
+                <button type="submit">Calcular</button>
+                <button type="button" onclick="limpar()">Limpar</button>
+
+            </fieldset>
+        </form>
+    </div>
+    <script src="freq.js"></script>
+</body>
+
+</html>

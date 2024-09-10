@@ -1,0 +1,14 @@
+{
+    "name": "Freq",
+    "start_url": "/",
+    "display":"standalone",
+    "orientation": "portrait",
+    "icons":[
+        {
+            "src": "img/Freq.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+}
