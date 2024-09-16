@@ -1,6 +1,6 @@
 {
     "name": "Freq",
-    "start_url": "/",
+    "start_url": "/freq",
     "display":"standalone",
     "orientation": "portrait",
     "icons":[
