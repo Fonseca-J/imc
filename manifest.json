@@ -5,7 +5,7 @@
     "orientation": "portrait",
     "icons":[
         {
-            "src": "img/Freq.png",
+            "src": "img/freq.png",
             "sizes": "512x512",
             "type": "image/png"
         }
