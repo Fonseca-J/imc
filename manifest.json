@@ -1,7 +1,7 @@
 {
     "name": "Freq",
-    "start_url": "/freq",
-    "display":"standalone",
+    "start_url": "/",
+    "display": "standalone",
     "orientation": "portrait",
     "icons": [
         {
@@ -10,5 +10,4 @@
             "type": "image/png"
         }
     ]
-
 }

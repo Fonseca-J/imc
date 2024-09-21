@@ -20,9 +20,10 @@
             <fieldset id="texto">
                 <legend>Status</legend>
             </fieldset>
-
+            <br>
             <fieldset id="usuario">
-                <legend>Identificação do Usuário</legend>
+                <legend>Identificação do Usuário </legend>
+                <br>
 
                 <label for="inputNome">Nome:</label>
                 <input type="text" id="inputNome" required><br>
@@ -34,14 +35,16 @@
                 <input type="number" id="inputPeso" step="0.1" required><br>
 
                 <label for="inputAltura">Altura (cm):</label>
-                <input type="number" id="inputAltura" step="0.1"required><br>
+                <input type="number" id="inputAltura" step="0.1" required><br>
 
                 <label for="inputImc">IMC:</label>
                 <input type="text" id="inputImc" readonly><br>
 
+            <div class="button-container">    
                 <button type="submit">Calcular</button>
                 <button type="button" onclick="limpar()">Limpar</button>
-
+            </div>
+                    
             </fieldset>
         </form>
     </div>

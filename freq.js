@@ -31,6 +31,11 @@ function calcular() {
 }
 
 function limpar() {
+    document.getElementById('inputNome').value = '';
+    document.getElementById('inputIdade').value = '';
+    document.getElementById('inputPeso').value = '';
+    document.getElementById('inputAltura').value = '';
+    document.getElementById('inputImc').value = '';
     document.getElementById('status').src = "img/logo.png";
     document.getElementById('texto').innerHTML = "Preparado?";
 }

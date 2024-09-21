@@ -22,13 +22,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
-    text-align: left; /* Para alinhar os textos do formulário à esquerda */
+    text-align: left;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o título no topo do formulário */
+    text-align: center;
+    color: #356adc;
 }
 
 label {
@@ -43,32 +44,48 @@ input[type="text"], input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
 }
 
-input[type="submit"], input[type="button"] {
-    width: 48%;
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #356adc;
+    box-shadow: 0 0 5px rgba(53, 109, 220, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2px;
+}
+
+button {
+    width: 100px; /* Largura fixa para os botões */
     padding: 10px;
-    margin: 5px 1%;
+    margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #28a745;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
-input[type="submit"]:hover, input[type="button"]:hover {
-    background-color: #218838;
+button[type="submit"] {
+    background-color: #28a745;
 }
 
-/* Botão limpar estilizado */
-input[type="button"] {
-    background-color: #356adc;
+button[type="submit"]:hover {
+    background-color: #218838; 
+    transform: scale(1.05); 
 }
 
-input[type="button"]:hover {
-    background-color: #2850b0;
+button[type="button"] {
+    background-color: #356adc; 
+}
+
+button[type="button"]:hover {
+    background-color: #2850b0; 
+    transform: scale(1.05); 
 }
 
 div {
@@ -92,7 +109,7 @@ img {
     }
 
     input[type="submit"], input[type="button"] {
-        width: 100%;
+        width: 100%; /* Botões ocupam toda a largura */
         margin-bottom: 10px;
     }
 }
